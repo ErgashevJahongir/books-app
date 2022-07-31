@@ -10,6 +10,7 @@ const MyComponent = () => {
 
     const onVerify = useCallback((token) => {
         setToken(token);
+        console.log(token);
     });
 
     const doSomething = () => {
@@ -31,11 +32,10 @@ const MyComponent = () => {
 };
 
 const App = () => {
-    const [token, setToken] = useState(null);
 
     return (
         <div>
-            <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_KEY}>
+            <GoogleReCaptchaProvider reCaptchaKey="6LcxjDYhAAAAAM9PKIyRrrGMByomWmvHJTxNy1By">
                 {/*<GoogleReCaptcha onVerify={handleVerify} />*/}
                 <MyComponent/>
             </GoogleReCaptchaProvider>

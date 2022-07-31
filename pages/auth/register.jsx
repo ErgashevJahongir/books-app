@@ -115,14 +115,15 @@ export default function Register() {
                             {/*    sitekey="6LeP-zUhAAAAAFbv6zNI53alwF-nCpmtF4Lr8iQS"*/}
                             {/*    ref={captchaRef}*/}
                             {/*/>*/}
-                            {/*<App/>*/}
-                            <GoogleReCaptchaProvider reCaptchaKey="6LcxjDYhAAAAAM9PKIyRrrGMByomWmvHJTxNy1By">
-                                <GoogleReCaptcha
-                                    onVerify={token => {
-                                        setToken(token);
-                                    }}
-                                />
-                            </GoogleReCaptchaProvider>
+                            <App/>
+                            {/*<GoogleReCaptchaProvider reCaptchaKey="6LcxjDYhAAAAAM9PKIyRrrGMByomWmvHJTxNy1By">*/}
+                            {/*    <GoogleReCaptcha*/}
+                            {/*        onVerify={token => {*/}
+                            {/*            setToken(token);*/}
+                            {/*            log*/}
+                            {/*        }}*/}
+                            {/*    />*/}
+                            {/*</GoogleReCaptchaProvider>*/}
                         </div>
                     </form>
                     <div className={styles.register_picture}></div>
