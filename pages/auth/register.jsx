@@ -62,7 +62,7 @@ export default function Register() {
             <Container>
                 <div className={styles.register_page}>
                     <form >
-                        <h1>Ro'yhatdan o'tish</h1>
+                        <h1>Ro&apos;yhatdan o&apos;tish</h1>
                         <div>
                             <input type="text" placeholder='Ismingizni kiriting' />
                         </div>
@@ -76,10 +76,10 @@ export default function Register() {
                             <input type="password" placeholder='Parolni takrorlang' />
                         </div>
                         <div className={styles.no_account_div}>
-                            <p className={styles.no_account}>Sizning accauntingiz bormi?  <Link href='/auth/login'><a className={styles.span}>Sign in</a></Link></p>
+                            <p className={styles.no_account}>Sizning accauntingiz bormi?  <Link href='/auth/login'><a className={styles.span}>Kirish</a></Link></p>
                         </div>
                         <div className={styles.register_buttons}>
-                            <button className={styles.sign_up}>Sign up </button>
+                            <button className={styles.sign_up}>Ro&apos;yhatdan o&apos;tish</button>
                             <span>or</span>
                             <div className={styles.with_register}>
                                 <div className={styles.google_register}>

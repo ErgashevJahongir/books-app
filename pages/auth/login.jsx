@@ -62,10 +62,10 @@ export default function Login() {
                             <input type="password" placeholder='Parol kiriting' />
                         </div>
                         <div className={styles.no_account_div}>
-                            <p className={styles.no_account}>Sizning hali accauntingiz yo'qmi?  <Link href='/auth/register'><a className={styles.span}>Sign up</a></Link></p>
+                            <p className={styles.no_account}>Sizning hali accauntingiz yo&apos;qmi?  <Link href='/auth/register'><a className={styles.span}>Sign up</a></Link></p>
                         </div>
                         <div className={styles.register_buttons}>
-                            <button className={styles.sign_in}>Sign in </button>
+                            <button className={styles.sign_in}>Kirish</button>
                             <span>or</span>
                             <div className={styles.with_register}>
                                 <div className={styles.google_register}>
