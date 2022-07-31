@@ -1,0 +1,196 @@
+.register{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_page{
+    background-color: #fff;
+    border-radius: 15px;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+}
+
+.register_page form{
+    padding: 30px;
+}
+
+.register_page h1{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 26px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: left;
+    gap: 5px;
+}
+
+.register_page h1::before {
+    content: '';
+    border-top: 2px #808080 solid;
+}
+
+.register_page input{
+    border: none;
+    border-bottom: 1px solid rgba(138,138,138,.3);
+    width: 100%;
+    background-color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+.register_page input::placeholder{
+    color: #808080;
+}
+
+.no_account_div{
+    margin-bottom: 20px;
+}
+
+.no_account{
+    font-weight: 500;
+}
+
+.span{
+    margin-left: 10px;
+    color: #6b38fd;
+}
+
+.sign_up,.sign_in{
+    padding: 12px 45px;
+    background-color: #6b38fd;
+    border: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.register_buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.register_buttons span{
+    font-weight: 600;
+}
+
+.with_register{
+    display: flex;
+}
+
+.with_register div{
+    padding: 0 10px;
+}
+
+.google_register{
+    position: relative;
+}
+
+.google_register::after{
+    position: absolute;
+    z-index: 99;
+    content: '';
+    height: 100%;
+    border-right: 2px solid #808080;
+    right: 0;
+}
+
+.google_btn{
+    background-color: #fff;
+    border: none;
+    width: 50px;
+}
+
+.google_btn img{
+    width: 100%;
+}
+
+.login_picture, .register_picture{
+    width: 100%;
+    height: 500px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register_picture{
+    background-image: url('../public/Image/register-picture.jpg');
+}
+
+.login_picture{
+    background-image: url('../public/Image/login-page.jpg');
+}
+
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+    float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .register_page{
+        grid-template-columns: 4fr 5fr;
+    }
+
+    .sign_up,.sign_in{
+        padding: 12px 40px;
+    }
+
+
+    .register_buttons{
+        gap: 0;
+    }
+
+    .with_register div{
+        padding: 0 5px;
+    }
+
+    .google_btn{
+        width: 40px;
+    }
+
+    .auth_picture{
+        background-position: center center;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .register_page{
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .login_picture, .register_picture{
+        width: 100% ;
+        height: 400px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 0;
+        background-position: center center;
+    }
+}

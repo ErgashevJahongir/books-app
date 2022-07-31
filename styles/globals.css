@@ -1,26 +1,105 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 100%;
+  color: #232323;
+  line-height: 1;
+  background-color: #ccc;
+  -webkit-text-size-adjust:100%;
+}
+
+header, nav, main, aside, section, article, footer{
+  display: block;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+img{
+  border: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+.container{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .container{
+    width: 1020px;
+    padding: 0 30px;
   }
 }
+
+
+@media screen and (max-width: 1020px) {
+  .container{
+    width: 768px;
+    padding: 0 ;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
