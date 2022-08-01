@@ -24,9 +24,6 @@ const MyComponent = () => {
                 onVerify={onVerify}
                 refreshReCaptcha={refreshReCaptcha}
             />
-            <button onClick={doSomething}>
-                Do Something
-            </button>
         </div>
     );
 };
@@ -35,8 +32,7 @@ const App = () => {
 
     return (
         <div>
-            <GoogleReCaptchaProvider reCaptchaKey="6LcxjDYhAAAAAM9PKIyRrrGMByomWmvHJTxNy1By">
-                {/*<GoogleReCaptcha onVerify={handleVerify} />*/}
+            <GoogleReCaptchaProvider reCaptchaKey={process.env.SITE_RECAPTCHA_KEY}>
                 <MyComponent/>
             </GoogleReCaptchaProvider>
         </div>

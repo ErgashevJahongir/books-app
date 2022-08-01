@@ -5,15 +5,8 @@ import GoogleLogin from "react-google-login";
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import google from "../../public/Image/Google.png";
 import facebook from './../../public/Image/Facebook.png';
-import YourReCaptchaComponent from "../../Components/recaptcha";
-import reCAPTCHA from "react-google-recaptcha"
 import {Container} from "@nextui-org/react";
-import {useRef, useState} from "react";
 import App from "../../Components/recaptcha";
-import {
-    GoogleReCaptchaProvider,
-    GoogleReCaptcha
-} from 'react-google-recaptcha-v3';
 
 
 const clientId = 'AIzaSyA8N0GXbjdHt6gWVQkDbL_raQ-E84mmTAU.apps.googleusercontent.com' ;
@@ -49,9 +42,6 @@ const handleLogin = async (googleData) => {
 }
 
 export default function Register() {
-    const [token, setToken] = useState();
-
-    const captchaRef = useRef(null);
 
     const onFinish = (values) => {
         console.log('Received values of form: ', values);
@@ -111,19 +101,7 @@ export default function Register() {
                             </div>
                         </div>
                         <div>
-                            {/*<reCAPTCHA*/}
-                            {/*    sitekey="6LeP-zUhAAAAAFbv6zNI53alwF-nCpmtF4Lr8iQS"*/}
-                            {/*    ref={captchaRef}*/}
-                            {/*/>*/}
                             <App/>
-                            {/*<GoogleReCaptchaProvider reCaptchaKey="6LcxjDYhAAAAAM9PKIyRrrGMByomWmvHJTxNy1By">*/}
-                            {/*    <GoogleReCaptcha*/}
-                            {/*        onVerify={token => {*/}
-                            {/*            setToken(token);*/}
-                            {/*            log*/}
-                            {/*        }}*/}
-                            {/*    />*/}
-                            {/*</GoogleReCaptchaProvider>*/}
                         </div>
                     </form>
                     <div className={styles.register_picture}></div>
