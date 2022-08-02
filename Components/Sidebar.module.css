@@ -1,0 +1,106 @@
+.top{
+    background-color: #ededed;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.middle_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li{
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+}
+
+.nav ul li a{
+    padding: 0 10px;
+}
+
+.active{
+    font-weight: 600;
+    color: #232323;
+    position: relative;
+}
+
+.active::after{
+    content: "";
+    position: absolute;
+    width: 89%;
+    height: 2px;
+    background-color: #232323;
+    bottom: -5px;
+    left: 5px;
+}
+
+.user_nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.user_nav ul li{
+    color: #232323;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_nav ul li:hover{
+    opacity: 0.7;
+}
+
+.user_nav ul li a{
+    font-size: 20px;
+    padding: 0 5px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.heart div,.card div, .user div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart div p, .card div p, .user div p{
+    text-transform: capitalize;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.bottom_nav .nav{
+    padding: 20px 0;
+}
+
+.nav_menu{
+    color: #232323;
+}
+
+.searchbar{
+    width: 100%;
+}
+
+.searchbar form{
+    padding: 0 40px;
+}

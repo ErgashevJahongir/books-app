@@ -32,7 +32,7 @@ const App = () => {
 
     return (
         <div>
-            <GoogleReCaptchaProvider reCaptchaKey={process.env.SITE_RECAPTCHA_KEY}>
+            <GoogleReCaptchaProvider reCaptchaKey="6LcxjDYhAAAAAM9PKIyRrrGMByomWmvHJTxNy1By">
                 <MyComponent/>
             </GoogleReCaptchaProvider>
         </div>
