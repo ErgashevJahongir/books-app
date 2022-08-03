@@ -61,6 +61,15 @@ q {
   quotes: none;
 }
 
+p{
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+li{
+  margin-bottom: 0;
+}
+
 .container{
   width: 1440px;
   margin: 0 auto;

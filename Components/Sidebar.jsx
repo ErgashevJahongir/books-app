@@ -1,6 +1,8 @@
+import {useMemo, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
+import {Container, Input, Dropdown, Loading} from "@nextui-org/react";
 
 import styles from './Sidebar.module.css'
 import "slick-carousel/slick/slick.css";
@@ -10,8 +12,10 @@ import logo from '../public/Image/Logo.png';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { FaGlobeAsia } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
-import {Container, Input, Loading} from "@nextui-org/react";
+
 
 const Sidebar = () => {
     const settings = {
@@ -42,6 +46,13 @@ const Sidebar = () => {
         ]
     };
 
+    const [selected, setSelected] = useState(new Set(["O'zbekcha"]));
+
+    const selectedValue = useMemo(
+        () => Array.from(selected).join(", ").replaceAll("_", " "),
+        [selected]
+    );
+
     return (
         <div className={styles.sidebar}>
             <div className={styles.top}>
@@ -49,14 +60,47 @@ const Sidebar = () => {
                     <div className={styles.navbar}>
                         <div className={styles.top_nav}>
                             <div className={styles.lang}>
-
+                                <Dropdown>
+                                    <Dropdown.Button flat color="#fff" css={{ tt: "capitalize"}}>
+                                        <FaGlobeAsia style={{marginRight: '10px'}} size={25} />  {selectedValue}
+                                    </Dropdown.Button>
+                                    <Dropdown.Menu
+                                        aria-label="Single selection actions"
+                                        color="#6036F3"
+                                        disallowEmptySelection
+                                        selectionMode="single"
+                                        selectedKeys={selected}
+                                        onSelectionChange={setSelected}
+                                        css={{width: '150px', color:"#6036F3"}}
+                                    >
+                                        <Dropdown.Item key="O'zbekcha">O'zbekcha</Dropdown.Item>
+                                        <Dropdown.Item key="English">English</Dropdown.Item>
+                                        <Dropdown.Item key="Русский">Русский</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </div>
+                            <div className={styles.leftCon}>
+                                <div className={styles.location}>
+                                    <Link href="tel:+998903778990" >
+                                        <a className={styles.tel}>90 377-89-90</a>
+                                    </Link>
+                                    <FaMapMarkerAlt size={20} />
+                                    <p>Tashkent</p>
+                                </div>
+                                <div className={styles.dostavka}>
+                                    <Link href="/" >
+                                        <a>
+                                            Yetkazib berish va to'lov
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.middle_nav}>
                             <div className={styles.logo}>
                                 <Link href="/">
                                     <a>
-                                        <Image src={logo} alt="Kitoblar saytining logosi" />
+                                        <Image src={logo} alt="Kitoblar saytining logosi" height={90} width={200}  />
                                     </a>
                                 </Link>
                             </div>
@@ -65,7 +109,7 @@ const Sidebar = () => {
                                     <Input
                                         clearable
                                         width="100%"
-                                        placeholder="Qanaqa kitob qidirayapsiz..."
+                                        placeholder="Qanday kitob qidirayapsiz..."
                                         contentLeft={
                                             <BsSearch size="30" color="#808080"/>
                                         }
