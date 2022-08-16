@@ -1,0 +1,64 @@
+[33mcommit 7ad169b613f0d29d356d9a7f95a875d62cb0581a[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: fcac323 d9bbd1c
+Author: Jahongir Ergashev <91261401+ErgashevJahongir@users.noreply.github.com>
+Date:   Wed Aug 3 23:48:02 2022 +0500
+
+    Merge pull request #1 from ErgashevJahongir/Joha
+    
+    Joha
+
+[33mcommit d9bbd1ceb6bb0ac049b0bbc6b79d8406c8ff0451[m[33m ([m[1;31morigin/Joha[m[33m)[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Wed Aug 3 23:45:05 2022 +0500
+
+    Update codestream.xml
+
+[33mcommit 90858bee85a2445e6c76516b3ea7260ccb6fa0fc[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Wed Aug 3 23:43:21 2022 +0500
+
+    Update codestream.xml
+    
+    xato
+
+[33mcommit fcac323099b99b2e28023b048f14e1cb31168f51[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Wed Aug 3 23:38:23 2022 +0500
+
+    Sidebarning dastlabki ko'rinishi
+
+[33mcommit b6404a1a85f03b5e3a892d3de5f2e504d60aacf1[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Tue Aug 2 15:57:38 2022 +0500
+
+    Sidebar qismining dastlabki ko'rinishi
+
+[33mcommit 8f0051251005732c648fa1463a58665e230aa97d[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Mon Aug 1 13:30:49 2022 +0500
+
+    recaptchaga o'zgartirish kiritildi
+
+[33mcommit 60aeb7f6c3d3d387077003b1665b70c402cbcf1a[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Sun Jul 31 22:24:28 2022 +0500
+
+    recaptcha qo'shildi
+
+[33mcommit c2ff04ecaa6a05556d12fd5a1e4d62466c6494a8[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Sun Jul 31 22:05:30 2022 +0500
+
+    yangi o'zgarish
+
+[33mcommit 0bbdef9e63e1959a34a9cd504e5d58977ea52a3a[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Sun Jul 31 19:02:19 2022 +0500
+
+    first commit
+
+[33mcommit b3a7a78a444f05b262720830c003739b0231f2f8[m
+Author: Jahongir Ergashev <jahongirergawev2@gmail.com>
+Date:   Sat Jul 30 00:52:49 2022 +0500
+
+    Initial commit from Create Next App
